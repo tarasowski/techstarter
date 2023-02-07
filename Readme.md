@@ -20,7 +20,7 @@ git diff HEAD #shows the changes in your working tree relative to the last commi
 git diff --staged #(or its synonym git diff --cached) shows the changes you staged for the next commit relative to the last commit
 ```
 
-## git diff-highlight (diff-so-fancy)
+## git diff-highlight or diff-so-fancy
 
 - Dies ist ein Skript, das die Lesbarkeit von Git Diffs verbessert, indem es die Änderungen in Farbe hervorhebt. 
 
@@ -30,18 +30,22 @@ git diff --staged #(or its synonym git diff --cached) shows the changes you stag
 
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*1Ctwbcei7JgxDakUJbzFug.png)
 
+- Diff-so-fancy
 
-```sh
-git diff
-```
+![](https://user-images.githubusercontent.com/3429760/32387617-44c873da-c082-11e7-829c-6160b853adcb.png)
+
+Source: [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
+
 
 1. Install diff-so-fancy
 2. Stage files
 3. Run git diff 
 
-![](https://user-images.githubusercontent.com/3429760/32387617-44c873da-c082-11e7-829c-6160b853adcb.png)
 
-Source: [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
+![](https://git-scm.com/book/en/v2/images/areas.png)
+
+Source: [what is
+         git](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
 
 
 ## binary data 

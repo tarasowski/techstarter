@@ -14,6 +14,14 @@ Dateien vorgenommen haben, seit Sie sie zuletzt gepusht oder gezogen haben.
 Zeitpunkt verwenden. Dies kann hilfreich sein, wenn Sie Änderungen an Ihrem Code
 im Laufe der Zeit verfolgen möchten.
 
+```sh
+git diff #shows the changes in your working tree relative to the last commit, only for tracked files
+
+git diff HEAD #shows the changes in your working tree relative to the last commit (includes files that are not tracked)
+
+git diff --staged #(or its synonym git diff --cached) shows the changes you staged for the next commit relative to the last commit
+```
+
 ## git diff-highlight
 
 - Eine weitere nützliche Funktion von Git Diffs ist git diff-highlight. Dies ist

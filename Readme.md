@@ -22,5 +22,5 @@ Source: [sitepoint](https://rietta.com/blog/github-merge-types/)
 
 ![](https://d33wubrfki0l68.cloudfront.net/ee1b13e0aa1a7b67036df5f305389d5a9392f462/a3721/assets/blog/github-merge-types/merge-3.png)
 
-Source: [rietto](https://riotta.com/blog/github-merge-types/)
+Source: [riotta](https://riotta.com/blog/github-merge-types/)
 

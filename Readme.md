@@ -22,6 +22,12 @@ git diff --staged #(or its synonym git diff --cached) shows the changes you stag
 
 ## git diff-highlight or diff-so-fancy
 
+```sh
+
+git diff-highlight #if diff-so-fancy installed simply run git diff
+
+```
+
 - Dies ist ein Skript, das die Lesbarkeit von Git Diffs verbessert, indem es die Änderungen in Farbe hervorhebt. 
 
 - Dies kann sehr hilfreich sein, wenn Sie Änderungen **schnell** erkennen möchten, ohne den gesamten Diff-Text durchzusehen.
@@ -36,11 +42,6 @@ git diff --staged #(or its synonym git diff --cached) shows the changes you stag
 
 Source: [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 
-```sh
-
-git diff-highlight
-
-```
 
 1. Install diff-so-fancy
 2. Stage files

@@ -29,12 +29,11 @@ git diff --staged #(or its synonym git diff --cached) shows the changes you stag
 ```sh
 git diff-highlight
 ```
-![https://miro.medium.com/v2/resize:fit:4800/format:webp/1*Kk0Bl4JTj5ByTDwOaciaHw.png]
+![](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*Kk0Bl4JTj5ByTDwOaciaHw.png)
 
-![https://miro.medium.com/v2/resize:fit:4800/format:webp/1*h8zPouTxZDyvIbRyjTMFqg.png]
+![](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*h8zPouTxZDyvIbRyjTMFqg.png)
 
-Source: [https://maximsmol.medium.com/improving-git-diffs-4519a6541cd1](git
-                                                                        highlight)
+Source: [git highlight](https://maximsmol.medium.com/improving-git-diffs-4519a6541cd1)
 
 ## binary data 
 - Wenn Sie mit binären Daten arbeiten, kann es schwierig sein, Git Diffs zu verwenden. (Git ist jedoch darauf ausgelegt, mit binären Daten umzugehen, und Sie können Git Diffs auch für binäre Daten verwenden.)

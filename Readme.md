@@ -1,26 +1,22 @@
-# Diff von Branches
+# Git Blame
 
-- Ein wichtiger Aspekt von Git ist die Fähigkeit, mehrere Branches (Zweige) in
-einem Projekt zu verwalten. Dies ermöglicht es Ihnen, mehrere Versionen Ihres
-Codes parallel zu entwickeln und später zusammenzuführen.
+- Git Blame ist ein nützliches Werkzeug in Git, das es Ihnen ermöglicht, die
+Verantwortung für eine bestimmte Zeile Code zuzuweisen. Mit Git Blame können Sie
+nicht nur sehen, wer eine bestimmte Zeile Code verändert hat, sondern auch wann
+die Änderung stattgefunden hat und welcher Commit die Änderungen enthält.
 
-- Wenn Sie Änderungen an Ihrem Code vornehmen, werden diese in dem Branch
-gespeichert, auf dem Sie gerade arbeiten. Es ist jedoch häufig notwendig, die
-Änderungen zwischen verschiedenen Branches zu vergleichen. Hier kommt die
-Funktion git diff ins Spiel.
+- Um die Funktion Git Blame zu verwenden, können Sie den Befehl git blame
+filename.ext auf der Kommandozeile ausführen. Dies zeigt Ihnen eine bersicht
+über alle Änderungen an jeder Zeile des angegebenen Datei-Names. Jede Zeile
+enthält Informationen darüber, wer die Änderungen vorgenommen hat, wann die
+Änderungen stattgefunden haben und welcher Commit die Änderungen enthält.
 
-- Mit git diff können Sie die Änderungen zwischen zwei unterschiedlichen Branches
-vergleichen. Dies kann hilfreich sein, wenn Sie sicherstellen möchten, dass alle
-Änderungen, die Sie an einem Branch vorgenommen haben, auch in einem anderen
-Branch vorhanden sind.
+- Git Blame ist besonders nützlich, wenn Sie Änderungen an einem bestimmten
+Bereich Ihres Codes verfolgen möchten. Es kann auch hilfreich sein, wenn Sie
+Fehler beheben oder eine bestimmte Funktionalität in Ihrem Code ändern möchten
+und nicht sicher sind, wer die ursprünglichen Änderungen vorgenommen hat.
 
-- Um die Änderungen zwischen zwei Branches zu vergleichen, können Sie den Befehl
-git diff branchA branchB auf der Kommandozeile ausführen. Dies zeigt Ihnen eine
-bersicht über alle Änderungen, die in branchA gemacht wurden, aber nicht in
-branchB enthalten sind.
-
-- Es ist wichtig zu beachten, dass Git Diffs nicht nur für den Vergleich von
-Änderungen zwischen Branches nützlich sind, sondern auch für den Vergleich von
-Änderungen zwischen zwei bestimmten Commit-IDs. Dies kann hilfreich sein, wenn
-Sie Änderungen zu einem bestimmten Zeitpunkt in Ihrem Projekt verfolgen möchten.
-
+- Es ist jedoch wichtig zu beachten, dass Git Blame nicht für die berwachung der
+Aktivitäten Ihres Teams gedacht ist. Stattdessen sollte es als Werkzeug
+verwendet werden, um Änderungen an Ihrem Code schnell und einfach
+nachzuverfolgen.

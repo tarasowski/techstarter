@@ -1,4 +1,4 @@
-# Diff von Branches
+# Diff von Branches 🌳 
 
 - Ein wichtiger Aspekt von Git ist die Fähigkeit, mehrere Branches (Zweige) in
 einem Projekt zu verwalten. Dies ermöglicht es Ihnen, mehrere Versionen Ihres

@@ -26,6 +26,9 @@ git diff --staged #(or its synonym git diff --cached) shows the changes you stag
 
 - Dies kann sehr hilfreich sein, wenn Sie Änderungen **schnell** erkennen möchten, ohne den gesamten Diff-Text durchzusehen.
 
+- Github / Gitlab UI
+
+![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*1Ctwbcei7JgxDakUJbzFug.png)
 
 ```sh
 git diff

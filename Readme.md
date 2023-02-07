@@ -1,4 +1,4 @@
-# Zusammenfassung + Q&A
+# Zusammenfassung + Q&A 🧑‍🎓
 
 **Zusammenfassend kann man sagen, dass Git Diffs ein wichtiger Bestandteil des
 Git-Workflows sind und es Ihnen ermöglichen, Änderungen an Ihrem Code zu

@@ -1,4 +1,4 @@
-# Was sind Git Diffs
+# Was sind Git Diffs 🛠️
 
 ## git diff
 - Git Diffs sind eine der wichtigsten Funktionen von Git und ermöglichen es Ihnen,

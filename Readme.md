@@ -30,9 +30,15 @@ git diff --staged #(or its synonym git diff --cached) shows the changes you stag
 
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*1Ctwbcei7JgxDakUJbzFug.png)
 
+
 ```sh
 git diff
 ```
+
+1. Install diff-so-fancy
+2. Stage files
+3. Run git diff 
+
 ![](https://user-images.githubusercontent.com/3429760/32387617-44c873da-c082-11e7-829c-6160b853adcb.png)
 
 Source: [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)

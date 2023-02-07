@@ -12,32 +12,33 @@
 
 ```sh
 git diff #shows the changes in your working tree relative to the last commit, only for tracked files
+ 
+#tracked files are files that Git knows about. Untracked files are files not in your  staging area.
 
 git diff HEAD #shows the changes in your working tree relative to the last commit (includes files that are not tracked)
 
 git diff --staged #(or its synonym git diff --cached) shows the changes you staged for the next commit relative to the last commit
 ```
 
-## git diff-highlight
+## git diff-highlight (diff-so-fancy)
 
 - Dies ist ein Skript, das die Lesbarkeit von Git Diffs verbessert, indem es die Änderungen in Farbe hervorhebt. 
 
 - Dies kann sehr hilfreich sein, wenn Sie Änderungen **schnell** erkennen möchten, ohne den gesamten Diff-Text durchzusehen.
 
-- Es ist jedoch wichtig zu beachten, dass Git Diffs für binäre Daten nicht so nützlich sind wie für Textdateien, da die Änderungen nicht als Text angezeigt werden können.
 
 ```sh
-git diff-highlight
+git diff
 ```
-![](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*Kk0Bl4JTj5ByTDwOaciaHw.png)
+![](https://user-images.githubusercontent.com/3429760/32387617-44c873da-c082-11e7-829c-6160b853adcb.png)
 
-![](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*h8zPouTxZDyvIbRyjTMFqg.png)
+Source: [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 
-Source: [git highlight](https://maximsmol.medium.com/improving-git-diffs-4519a6541cd1)
 
 ## binary data 
-- Wenn Sie mit binären Daten arbeiten, kann es schwierig sein, Git Diffs zu verwenden. (Git ist jedoch darauf ausgelegt, mit binären Daten umzugehen, und Sie können Git Diffs auch für binäre Daten verwenden.)
+- Es ist jedoch wichtig zu beachten, dass Git Diffs für binäre Daten **nicht so nützlich** sind wie für Textdateien, da die Änderungen nicht als Text angezeigt werden können.
 
+- Wenn Sie mit binären Daten arbeiten, kann es schwierig sein, Git Diffs zu verwenden. (Git ist jedoch darauf ausgelegt, mit binären Daten umzugehen, und Sie können Git Diffs auch für binäre Daten verwenden.)
 
 
 

@@ -36,6 +36,11 @@ git diff --staged #(or its synonym git diff --cached) shows the changes you stag
 
 Source: [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 
+```sh
+
+git diff-highlight
+
+```
 
 1. Install diff-so-fancy
 2. Stage files

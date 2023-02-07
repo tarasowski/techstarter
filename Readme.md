@@ -1,35 +1,26 @@
-# Was sind Git Diffs
+# Diff von Branches
 
-## git diff
-- Git Diffs sind eine der wichtigsten Funktionen von Git und ermöglichen es Ihnen,
-Änderungen an Ihrem Code zu sehen. 
+- Ein wichtiger Aspekt von Git ist die Fähigkeit, mehrere Branches (Zweige) in
+einem Projekt zu verwalten. Dies ermöglicht es Ihnen, mehrere Versionen Ihres
+Codes parallel zu entwickeln und später zusammenzuführen.
 
-- Mit Git Diffs können Sie sehen, was in Ihren Dateien geändert wurde, seit Sie sie zuletzt gepusht oder gezogen haben.
+- Wenn Sie Änderungen an Ihrem Code vornehmen, werden diese in dem Branch
+gespeichert, auf dem Sie gerade arbeiten. Es ist jedoch häufig notwendig, die
+Änderungen zwischen verschiedenen Branches zu vergleichen. Hier kommt die
+Funktion git diff ins Spiel.
 
-- Um Git Diffs zu verwenden, können Sie den Befehl `git diff` auf der Kommandozeile
-ausführen. Dies zeigt Ihnen eine bersicht über alle Änderungen, die Sie an Ihren
-Dateien vorgenommen haben, seit Sie sie zuletzt gepusht oder gezogen haben.
+- Mit git diff können Sie die Änderungen zwischen zwei unterschiedlichen Branches
+vergleichen. Dies kann hilfreich sein, wenn Sie sicherstellen möchten, dass alle
+Änderungen, die Sie an einem Branch vorgenommen haben, auch in einem anderen
+Branch vorhanden sind.
 
-- Sie können Git Diffs auch für einen bestimmten Branch oder für einen bestimmten
-Zeitpunkt verwenden. Dies kann hilfreich sein, wenn Sie Änderungen an Ihrem Code
-im Laufe der Zeit verfolgen möchten.
+- Um die Änderungen zwischen zwei Branches zu vergleichen, können Sie den Befehl
+git diff branchA branchB auf der Kommandozeile ausführen. Dies zeigt Ihnen eine
+bersicht über alle Änderungen, die in branchA gemacht wurden, aber nicht in
+branchB enthalten sind.
 
-## git diff-highlight
-
-- Eine weitere nützliche Funktion von Git Diffs ist git diff-highlight. Dies ist
-ein Skript, das die Lesbarkeit von Git Diffs verbessert, indem es die Änderungen
-in Farbe hervorhebt. 
-
-- Dies kann sehr hilfreich sein, wenn Sie Änderungen schnell
-erkennen möchten, ohne den gesamten Diff-Text durchzusehen.
-
-- Wenn Sie mit binären Daten arbeiten, kann es schwierig sein, Git Diffs zu
-verwenden. Git ist jedoch darauf ausgelegt, mit binären Daten umzugehen, und Sie
-können Git Diffs auch für binäre Daten verwenden. 
-
-- Es ist jedoch wichtig zu beachten, dass Git Diffs für binäre Daten nicht so nützlich sind wie für
-Textdateien, da die Änderungen nicht als Text angezeigt werden können.
-
-
-
+- Es ist wichtig zu beachten, dass Git Diffs nicht nur für den Vergleich von
+Änderungen zwischen Branches nützlich sind, sondern auch für den Vergleich von
+Änderungen zwischen zwei bestimmten Commit-IDs. Dies kann hilfreich sein, wenn
+Sie Änderungen zu einem bestimmten Zeitpunkt in Ihrem Projekt verfolgen möchten.
 

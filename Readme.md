@@ -2,7 +2,7 @@
 
 ##  Ueber mich 
 
-- Live changing event: Silicon Valley (SF)
+- Live changing event: Silicon Valley (SF) 🌉
 - Quereinsteiger, 6 Jahre Development, 3x AWS Certified, 200+ Coding Projekte
 
 ## Ueber das Thema

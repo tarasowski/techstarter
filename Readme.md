@@ -2,7 +2,7 @@
 
 ##  Ueber mich 
 
-- Dimitri: Quereinsteiger, 6 Jahre Development, 3x AWS Certified, 200+ Coding Projekte
+- Quereinsteiger, 6 Jahre Development, 3x AWS Certified, 200+ Coding Projekte
 
 
 ## Ueber das Thema

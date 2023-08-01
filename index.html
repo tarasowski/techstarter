@@ -1,0 +1,131 @@
+<!-- index.html -->
+<!doctype html>
+<html>
+  <head>
+    <title>Meine erste Portfolio Website</title>
+  </head>
+  <body>
+    <!-- Hier kommen die Kommentare -->
+    <!-- Sections: 
+    Navigation, 
+    Banner, 
+    CV (as lists),
+    Contact Form, 
+    Footer -->
+    <header>
+      <nav name="top">
+        <a href="/index.html">Home</a>
+        <a href="/lebenslauf.html">Lebenslauf</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#mitte">Mitte</a>
+        <a target="_blank" href="https://www.techstarter.de">Techstart</a>
+      </nav>
+      <img
+        src="https://media.licdn.com/dms/image/C4D03AQHp4wivxmwB1Q/profile-displayphoto-shrink_800_800/0/1570011690693?e=1696464000&v=beta&t=L14qxnuUhxmHfYRbp23unSZZdixbPIjArHrbP9mvmxA"
+        width="200px"
+      />
+    </header>
+    <main>
+      <h1>Willkommen auf meiner Homepage</h1>
+      <h2>Das ist mein Werdegang</h2>
+      <ol>
+        <li>Der erste Eintrag</li>
+        <li>Der zweite Eintrag</li>
+        <li>Der dritte Eintrag</li>
+      </ol>
+      <h2>Das sind meine Skills</h2>
+      <ul>
+        <li type="disc">Python</li>
+        <li type="circle">Bash</li>
+        <li type="circle">AWS Cloud Practicioner</li>
+      </ul>
+      <h2>Das sind meine Projekte</h2>
+      <ol>
+        <li>Project #1</li>
+        <li>Project #2</li>
+        <li>
+          <a target="_blank" href="https://github.com/abi">Github Profil</a>
+        </li>
+      </ol>
+     
+     <section>
+     <h2>Lebenslauf als Tabelle</h2>
+		<!-- Tabelle -->
+        <table border="2">
+				<tr>
+                	<th>Jahr</th>
+					<th>Firmen</th>
+				</tr>
+        <tr>
+			<td>2023</td>
+	        <td>Inter bei Google in SF</td>
+        </tr>
+        	<tr>
+            	        <td>2019</td>
+
+	        <td>Software Developer bei Techstarter</td>
+        </tr>
+        <tr>
+                	<td>2018</td>
+        	<td>Dritter Eintrag</td>
+        </tr>
+        </table>
+      </section>
+      
+      <h2>Kontaktformular</h2>
+      <form action="https://www.actionforms.io/e/r/techstarter" method="POST">
+		<label>Name:</label>  
+        <input 
+        	placeholder="Dein Name"
+ 			type="text" 
+            name="fullname" 
+        	required 
+        />
+        <br /> <br />
+        <label>Email:</label>
+        <input 
+        	placeholder="Deine Email"
+            type="email"
+            name="email"
+            required
+         />
+       
+                 <br /> <br />
+         <label>Kommentar:</label>
+        <textarea 
+        	placeholder="Dein Kommentar"
+	        name="message" 
+    	    rows="4"
+        	cols="50"
+	        required>
+        </textarea>
+        <br /> <br />
+        <label> ich habe den Datenschutz akzeptiert</label>
+        <input type="radio" value="Hello" />
+         <br /> <br />
+         <label>Auswahl</label>
+         <select>
+         	<option>Auswahl #1</option>
+            <option>Auswahl #2</option>
+            <option>Auswahl #3</option>
+         </select>
+        <!-- wichtig, ein button -->
+         <br /> <br />
+        <input type="submit" value="Absenden" />
+        <!-- wichtig, ein button -->
+        
+      </form>
+
+    </main>
+    
+    
+<br />
+<br /><br /><br /><br />
+    <footer>Footer: Impressum | 
+    <a
+    name="kontakt"
+    href="mailto:abi@gmail.com?subject=Kontakt über meine Website&body=Hallo Abi, ....."> Senden Sie mir eine Email</a>
+    <a href="#top">Go back to top</a>
+    </footer>
+  </body>
+</html>

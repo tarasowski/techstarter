@@ -57,3 +57,14 @@ console.log(squares)
 
 
 
+const str = "Hello World"
+
+str.split("").reverse().join("")
+
+str.split(" ")
+   .reverse()
+   .join(" ")
+
+
+
+

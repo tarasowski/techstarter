@@ -59,7 +59,11 @@ function getScenarios(scenarios) {
 // Entscheidung für jede Situation treffen
 // Eingabe über die Nummer der gewünschten Option
 
-function getChoices() {}
+function getChoicesForSituation(scenarios, situation) {
+    // situation = 'Du stehst vor einer mysteriösen Höhle. Was möchtest du tun?'
+    return // choices
+
+}
 
 console.log(
     getScenarios(scenarios)

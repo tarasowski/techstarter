@@ -38,8 +38,34 @@ const scenarios = [
             "Du wirst einer der besten Glumanda Trainer der Welt",
             "Garry wird immer besser sein als Du"
         ]
+    },
+    /*
+    {
+        situation: "",
+        choices: [],
+        consequences: []
     }
+    */
 ];
+
+//2. Verwende map, um das Array von Szenarienobjekten in eine Liste von Situationen umzuwandeln, die dem Spieler angezeigt werden.
+
+function getScenarios(scenarios) {
+    // ["situation 1", "situation 2", ...]
+    return scenarios.map(scenario => scenario.situation)
+}
+
+//3. Biete dem Spieler die Möglichkeit, eine Entscheidung für jede Situation zu treffen, indem er die Nummer der gewünschten Option eingibt.
+// Entscheidung für jede Situation treffen
+// Eingabe über die Nummer der gewünschten Option
+
+function getChoices() {}
+
+console.log(
+    getScenarios(scenarios)
+)
+
+
 
 
 let playerDecisions = () => {}

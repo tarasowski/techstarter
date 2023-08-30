@@ -81,4 +81,7 @@ const x = Object.keys(abenteuer)
                 .map(station => abenteuer[station])
 */
 
+console.log(
+  Object.entries(abenteuer)
+)
   

@@ -55,8 +55,6 @@ ferrari.addPs(500)
 console.log(ferrari)
 
 
-
-
 class Truck extends Car {
     constructor(tonnen) {
         super()
@@ -73,13 +71,55 @@ class Truck extends Car {
     }
 }
 
+class Person {
+    constructor(age = 25 ,weight = 80, name = "Test") {
+        this.age = age
+        this.weight = weight
+        this.name = name
+    }
+    alterAge(newAge) {
+        this.age = newAge
+    }
+
+    alterWeight(newWeigth) {
+        this.weight = newWeigth
+    }
+
+    alterName(newName) {
+        this.name = newName
+    }
+
+}
+
+class Sex extends Person {
+    constructor(sex) {
+        super()
+        this.sex = sex
+    }
+    alterSex(newSex) {
+        this.sex = newSex
+    }
+}
+
+let person1 = new Person(25, 80, "Dimi")
+let person2 = new Person(25, 80, "Tsst")
 
 
+let man = new Sex("man")
+let woman = new Sex("woman")
+
+console.log(man)
+console.log(woman)
+
+
+
+/*
 let truck = new Truck(7)
 truck.drive(150)
 truck.load(50)
 truck.unload(50)
-console.log(truck)
+//console.log(truck)
+*/
 
 
 /*

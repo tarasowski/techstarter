@@ -108,8 +108,8 @@ let person2 = new Person(25, 80, "Tsst")
 let man = new Sex("man")
 let woman = new Sex("woman")
 
-console.log(man)
-console.log(woman)
+console.log(man["sex"])
+console.log(woman.sex)
 
 
 

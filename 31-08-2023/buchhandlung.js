@@ -8,14 +8,17 @@ const buecher = [
 ];
 
 // Schritt 2: Verwende map, um eine Liste der Buchtitel zu erstellen
-const titelListe = ""
+const getTitle = (bucher) =>  {
+    return bucher.titel
+}
+const titelListe = buecher.map(getTitle) 
 console.log("Liste der Buchtitel:", titelListe);
 
 // Schritt 3: Verwende filter, um eine Liste von Büchern im Genre "Fantasy" zu erstellen
-const fantasyBuecher = ""
+const fantasyBuecher = buecher.filter((buch) => buch.genre === "Fantasy")
 console.log("Fantasy Bücher:", fantasyBuecher);
 
 // Schritt 4: Verwende filter, um eine Liste von Büchern mit Bewertung 4.0 oder höher zu erstellen
-const hochBewerteteBuecher = ""
+const hochBewerteteBuecher = buecher.filter((buch) => buch.bewertung >= 4.0 )
 console.log("Hoch bewertete Bücher:", hochBewerteteBuecher);
 

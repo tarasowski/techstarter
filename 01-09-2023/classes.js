@@ -102,3 +102,70 @@ console.log("Products", cart["products"])
 //console.log(cart)
 
 //const xs = [1, 2, 3, 4, 5]
+
+/*
+Schreiben Sie eine Funktion, die die Zeichenfolge einfach eine bestimmte Anzahl von Malen wiederholt:
+
+repeatString('hey', 3) // return 'heyheyhey'
+Diese Funktion benötigt zwei Argumente, string und num.
+*/
+
+function repeatString(str, n) {
+    let result = ""
+    for (let i = 1; i <= n; i++) {
+        result += str
+    }
+    return result
+}
+
+function repeatString2(str, n) {
+    return str.repeat(n)
+}
+
+console.log(
+    repeatString("hey", 3),
+    repeatString2("hey", 3)
+)
+
+/*
+Schreiben Sie eine Funktion namens „reverseString“, die ihre Eingabe umgekehrt zurückgibt!
+reverseString('hello there') // return 'ereht olleh'
+*/
+
+function reverseString(str) {
+    const chars = str.split("");
+    const reverseChars = chars.reverse()
+    const reversedString = reverseChars.join("")
+    return reversedString
+    /*
+    return str
+            .split("")
+            .reverse()
+            .join("")
+    */
+}
+
+function reverString2(str) {
+    return [...str].reverse().join("")
+}
+
+const reversedString3 = function(str) {
+    return str.split("").reverse().join("")
+} 
+
+const myString = "Hello World!"
+const reversedString = reversedString3(myString)
+
+
+console.log(
+    reverseString("Hello World!"),
+    reverString2("Hello World!"),
+    [..."Hello World"].reverse().join(""),
+    reversedString
+)
+
+/*
+Schreiben Sie zwei Funktionen, 
+die Temperaturen von Fahrenheit in Celsius und umgekehrt umrechnen:
+convertToCelsius(32) // return 0 convertToFahrenheit(0) // return 32
+*/

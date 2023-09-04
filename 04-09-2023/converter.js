@@ -21,6 +21,7 @@ function convertToFahrenheit(celsius) {
 // rl is the instance of class readlin            // class readline
 const rl = readline.createInterface({input: process.stdin, output: process.stdout})
 
+
 // rl.question("hier kommt was rein", callback) -> this is a callback function
 rl.question("Gebe die in fahrenheit ein: ", (fahrenheit) => {
     const converted = convertToCelsius(fahrenheit)

@@ -22,10 +22,22 @@ const noten = [80, 90, 75, 60, 95, 85];
 let summe = 0;
 
 // for loop die zur Summe festhaelt
+for (let i = 0; i < noten.length; i++) {
+    // gültier bereich zwischen 80 <> 90
+    // falls nicht im bereich sollte nicht zur Summe addiert werden
+    const note = noten[i]
+    // check if valid  
+    if(note >= 80 && note <= 90) {
+        summe += note
+    }
+}
+
+/*
 for (let note of noten) {
     // Bonus: Überprüfe, ob die Note im gültigen Bereich liegt
 }
+*/
 
 const durchschnitt = summe / noten.length;
-console.log(`Durchschnitt: ${durchschnitt.toFixed(2)}`);
+console.log(`Durchschnitt: ${durchschnitt.toFixed(0)}`);
 

@@ -53,11 +53,64 @@ Car.prototype.drive = function() {
 // destructuring
 
 
-function customerOrder({name, adddress, id}) {
+function customerOrder({name, address, id}) {
     // code comes here
     console.log("name", name)
     console.log("adddress", address)
     console.log("id", id)
 }
 
-customerOrder({name: "Dimi", address: "Berlinerweg", id: 1})
+//customerOrder({name: "Dimi", address: "Berlinerweg", id: 1})
+
+
+class Car {
+    constructor(color) {
+        this.color = color
+        this.mealage = 0
+        this.brand = "mercedes"
+    }
+    drive(km) {
+        this.mealage = km
+    }
+    changeBrand(newBrand) {
+        this.brand = newBrand
+    }
+}
+
+// DRY - don't repeat yourself ✅
+
+const blackCar = new Car("black")
+const redCar = new Car("red")
+
+blackCar.drive(50)
+
+redCar.changeBrand("Porsche")
+
+/*
+// DRY wird nicht eingehalten, ist nicht gut 🛑
+const blackCar = {
+    color: "black",
+    mealage: 0,
+    brand: ...
+    drive: function(km) {
+        this.mealage = km
+    }
+    changeBrad: ...
+}
+
+const redCar = {
+    color: "red",
+    mealage: 0,
+    brand: ...
+    drive: function(km) {
+        this.mealage = km
+    }
+    changeBrand: function() ...
+}
+
+*/
+
+console.log(
+    blackCar,
+    redCar
+)

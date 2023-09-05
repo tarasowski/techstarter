@@ -119,7 +119,3 @@ console.log(
     res,
     res2
 )
-
-
-
-

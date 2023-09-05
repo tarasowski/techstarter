@@ -81,5 +81,25 @@ const result = fireGun(bulletPosition)
 
 console.log(
     //fireGun(spinChamber())
-    result,
+    //result,
+    typeof("10"),
+    typeof(10),
+    typeof(null) // fehler was nicht behoben wurde
     );
+
+
+const obj = {
+    name: "Enrico"
+} 
+
+const json = JSON.stringify(obj)
+
+console.log(
+        JSON.parse(json) 
+    )
+
+operation1()
+async/await operation2() // this function has to calculate a lot of data it takes 1 minute
+operation3()
+operation4()
+operation5()

@@ -13,6 +13,7 @@ const objectAsJson = JSON.stringify(customer)
 fs.writeFileSync("./customers.json", objectAsJson, "utf-8")
 */
 
+/*
 let customer = {}
 
 const rawData = fs.readFileSync("./customers.json")
@@ -28,3 +29,13 @@ console.log(
     )
 
 //console.log(JSON.stringify(customer))
+*/
+
+console.log("1 step: unser program wird gestartet")
+
+// asynchronon
+fs.readFile("./customers.json", (data) => {
+    console.log("2 step: die daten werden bearbeitet")
+})
+
+console.log("3 step: unser program wird beendet")

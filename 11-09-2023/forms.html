@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Mein Formular</title>
+        <!--
+            👇 was ist das hier?
+        -->
+        <meta charset="utf-8">
+    </head>
+    <style>
+        #headline {
+            color: green;
+        }
+    </style>
+    <body>
+       <h1
+            id="headline1"
+            class="headline"
+       >Der Gruß-o-Mat</h1> 
+       <form 
+       action="" name="form1">
+        <label for="user">Dein Name:</label>
+        <input type="text" name="user" size="40" />
+        <input type="button" name="okButton" value="OK">
+        <br />
+        <label for="greeting">Output:</label>
+        <input 
+        readonly="readonly"
+        type="text" 
+        name="greeting" 
+        size="60">
+       </form>
+       <h1
+        id="headline2"
+        class="headline"
+       >Die zweite Form auf der Seite</h1>
+       <form action="" name="form2">
+        <input type="text" placeholder="Telefon" />
+       </form>
+       <p>Das ist das Formende</p>
+    </body>
+    <script>
+        function handleClick() {
+            document.form1.greeting.value = `Hallo ${document.form1.user.value}!`
+            return ""
+        }
+
+        function handleChange() {
+            console.log("es wird hie was eingegeben!")
+        }
+
+        function handleCopy(/*event*/) {
+            console.log("es wurde etwas kopiert!")
+            alert("Es wurde erfolgreich kopier!" + "✅")
+        }
+    document.form1.okButton.addEventListener("click", handleClick)
+
+    document.form1.user.addEventListener("input", handleChange)
+    document.form1.user.addEventListener("copy", () => console.log("es wurde kopiert"))
+
+    </script>
+</html>

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Meine Todo App</title>
+        <meta charset="utf-8">
+    </head>
+    <style>
+        .todo-list {
+            color: blue;
+        }
+    </style>
+    <body>
+       <h1>Meine Todo App</h1> 
+       <div><!-- Dieser div ist leer--></div>
+    <div class="todo-list">
+        <ul id="todo">
+            <li>Einkaufen gehen</li>
+            <li>Auto waschen gehen</li>
+            <!-- <li>hier muss meine todo auftauchen</li> -->
+        </ul>
+        <form action="">
+            <input id="todoName" type="text" size="60" placeholder="Deine todo für eintragen">
+            <input onclick="handleClick()" type="button" value="Todo hinzufügen">
+        </form>
+    </div>
+    </body>
+    <script>
+        function handleClick() {
+            const value = document.querySelector("#todoName").value
+            const todo = document.querySelector("#todo")
+
+            const li = document.createElement("li")
+            li.textContent = value //"Dummy not real -> Neue Todo hier" 
+
+            todo.appendChild(li)
+        }
+    </script>
+</html>

@@ -13,14 +13,20 @@
        <div><!-- Dieser div ist leer--></div>
     <div class="todo-list">
         <ul id="todo">
-            <li>Einkaufen gehen
+            <!-- li is child von ul-->
+            <li class="item">Einkaufen gehen
                 <button>x</button>
             </li>
-            <li>
+            <li class="item">
                 Auto waschen gehen
                 <button>x</button>
             </li>
-            <!-- <li>hier muss meine todo auftauchen</li> -->
+            <li class="item">
+                New todo
+                <button
+                    onclick="deleteTask(this)"
+                >x</button>
+            </li>
         </ul>
         <form action="">
             <input id="todoName" type="text" size="60" placeholder="Deine todo für eintragen">
@@ -29,6 +35,24 @@
     </div>
     </body>
     <script>
+
+        // parentNode.removeChild( childNodeToRemove )
+        // this -> is a pointer to the element itself
+
+
+        function deleteTask(button) {
+            console.log("this is my button", button)
+            const parentOfButton = button.parentNode
+            console.log("this is the parent of my button", parentOfButton)
+            const parentOfLi = parentOfButton.parentNode
+            console.log("this is my parent of my li element", parentOfLi)
+            parentOfLi.removeChild(parentOfButton)
+            // wir finden zuerst das Button
+            // danach finden das Parent vom Button welches ist <li> 
+            // danach finden wir das Parent vom <li> welches ist <ul>
+            // danach entfernen wir vom Parent <ul> ein Kind <li>
+        }
+
         function handleClick() {
             const value = document.querySelector("#todoName").value
             const todo = document.querySelector("#todo")

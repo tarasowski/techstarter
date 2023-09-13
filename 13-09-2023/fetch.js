@@ -2,15 +2,9 @@ const url = "https://api.brightsky.dev/weather?lat=52.52&lon=13.404954&date=2023
 
 
 const getWeather = () => {
-   fetch(url).then(async response => {
-    if (response.status === 200) {
-        const body = await response.json()
-        return body
-    } else {
-        console.error("request has failed")
-    }
-   }).catch(error => console.log(error))
-   return null
+   fetch(url).then(response => response.json())
+             .then(console.log)
+             .catch(console.error)
 }
 
 const getWeather2 = async () => {
@@ -20,4 +14,4 @@ const getWeather2 = async () => {
     return body
 }
 
-getWeather2()
+getWeather()

@@ -1,4 +1,4 @@
-const express = require("express")
+import express from "express"
 // express is a constructor
 // a constructor creates an object
 // an object hast properties (keys/value) and methods (functions)

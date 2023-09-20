@@ -1,5 +1,6 @@
 import express from "express"
 import bodyParser from "body-parser"
+import cors from "cors"
 import fs from "fs"
 
 
@@ -7,8 +8,12 @@ const app = express()
 const port = 3000
 const fileName = "./todos.json"
 const url = "http://localhost:3000/save"
+
 app.use(bodyParser.json());
+
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
+
 
 //app.use(express.urlencoded({ extended: true }));
 
@@ -23,7 +28,7 @@ let todos = [
 
 // SSR - server-side rendering
 function createForm() {
- return `
+    return `
 <!--  👇 this is our view in the M V C -->
 <h1>Meine TodoListe</h1>
 <ul>
@@ -52,7 +57,7 @@ const handleSave = async () => {
 </script>
 `
 }
-    
+
 const json = fs.readFileSync(fileName).toString('utf8') // implicit type conversion stattfinden von json to js object?
 
 if (typeof(json) === "string") {
@@ -61,6 +66,38 @@ if (typeof(json) === "string") {
 }
 
 // route /
+/*
+ app.get("/", function(req, res) {
+
+})
+
+app.post("/", function(req, res) {
+
+})
+
+app.post("/add-todo", function(req, res) {
+
+})
+*/
+
+app.delete("/delete-order", function(req, res) {
+    console.log("print my req", req)
+    res.send("Your order has been deleted!")
+})
+
+app.post("/order-pizza", function(req, res) {
+    const customerName = req.body.name
+    //console.log(req.body.name)
+    // sends always in text/html format
+    //res.send(`Vielen Dank für diese Bestellung: ${customerName}`)
+    res.json({message: "Thank you for your order"})
+})
+
+app.get("/test", function(req, res) {
+    console.log("request infos", req.get("User-Agent"))
+    res.send("Hello from the server")
+})
+
 app.get("/", function(req, res) {
     res.send(createForm())
 })
@@ -75,6 +112,8 @@ app.get("/save", function(req, res) {
 
 app.post("/add-todo", function(req, res) {
     //const { myTodo, myName } = req.body
+
+    // get information from request
     const myTodo = req.body.myTodo
     const myName = req.body.myName
     const nextId = todos.length + 1
@@ -90,6 +129,8 @@ app.post("/add-todo", function(req, res) {
 
     //res.send("Form successfully submitted")
     //res.send("Successfully saved")
+
+    // schick antwort an den client
     res.redirect("/")
 })
 

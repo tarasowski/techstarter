@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Requests</title>
+    </head>
+    <body>
+      <h1>Hello world, we are going to test our requests to the server</h1>  
+      <button onclick="runTest()">Send a request</button>
+      <h1>Erstelle eine Pizzabestellung -> sende die Bestellung an den Server </h1>
+      <h2>Pizza ingredients:</h2>
+      <ul>
+        <li>Käse</li>
+        <li>Tomaten</li>
+        <li>Pizzarand mit Käse</li>
+      </ul>
+      <h2>Besteller:</h2>
+      <ul>
+        <li>Name: Dimi</li>
+        <li>Tel: +49303949393</li>
+      </ul>
+      <button onclick="orderPizzaNow()">Order my Pizza</button>
+
+      <button onclick="deleteMyOrder()">Delete my order</button>
+    </body>
+    <script>
+
+        const deleteUrl = "http:localhost:3000/delete-order"
+
+        const deleteMyOrder = () => {
+            fetch(deleteUrl, {
+                method: "DELETE",
+                headers: {},
+                body: JSON.stringify({})
+            })
+        }
+
+        const pizzaOrder = {
+            toppings: "Cheese",
+            ingredients: "Tomate",
+            extra: "Pizzarand mit Käse",
+            name: "Dimi",
+            phone: "+49303949393"
+        }
+
+        const orderUrl = "http:localhost:3000/order-pizza"
+
+        function orderPizzaNow() {
+            fetch(orderUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json" // I only accept data in json format
+                },
+                body: JSON.stringify(pizzaOrder) 
+            })
+        }
+
+            function runTest() {
+                const url = "http://localhost:3000/test"
+                // we send a request to the server
+                // we communicate with the server with HTTP Protocol
+                // 👇 fetch() is a built-in api that can send http request and get responses
+                // fetch(url: Here is the url of the server, {}: here are the 3 things method, headers, body  )
+                // fetch(url, {method, headers, body})
+                fetch(url, {
+                    method: "GET",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    //body: JSON.stringify({})
+                })
+
+            }
+    </script>
+</html>

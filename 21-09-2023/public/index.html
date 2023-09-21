@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Unsere Pizza App</title>
+    </head>
+    <body>
+        <h1>Hiere meine Bestellungen</h1>
+       <ul>
+        <li>Pizza Margarita von Dimi für den Preis von 12,99€</li>
+        <li>Pizza Hawai von Abi für den Preis von 15,99€</li>
+        <li>Pizza Salami von Pablo für den Preis von 18,99€</li>
+        <li>Pizza Americano von Evely für den Preis von 20,99€</li>
+       </ul> 
+       <h1>Bestellformular</h1>
+    <form onsubmit="handleFormular(event)">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Dein Name">
+        <br />
+        <label for="tel">Tel:</label>
+        <input type="text" name="tel" id="tel" placeholder="Deine Nummer">
+        <br />
+        <label for="auswahl">Auswahl</label>
+        <select name="auswahl" id="auswahl">
+            <option value="Pizza Margarita">Pizza Margarita</option>
+            <option value="Pizza Hawaii">Pizza Hawaii</option>
+            <option value="Pizza Salami">Pizza Salami</option>
+            <option value="Pizza Americano">Pizza Americano</option>
+        </select>
+        <br />
+        <button 
+        type="submit">Bestellung absenden</button>
+    </form>
+    </body>
+    <script>
+        let url = "http://localhost:300/api/pizza"
+
+        function handleFormular(event) {
+            event.preventDefault()
+            console.log("submit auf formular")
+        }
+    </script>
+</html>

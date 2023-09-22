@@ -4,25 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO App</title>
+    <script>
+        async function getTasks() {
+            const ul = document.querySelector('#taskList');
+            const response = await fetch("https://ibqi472wjaavhtkgojene4fy7q0eofjv.lambda-url.us-east-1.on.aws/");
+            const data = await response.json();
+            // [{id, taskName}, {id, taskName}, {id, taskName}]
+            // for (let i = 0; i < data.length; i++) { }
+            data.forEach(task => {
+                const listItem = document.createElement('li');
+                listItem.textContent = task.taskName;
+                ul.appendChild(listItem);
+            })
+            return data;
+        }
+
+        window.onload = async function() {
+            // Call the function to get the tasks
+            await getTasks();
+        }
+    </script>
 </head>
 <body>
     <h1>TODO App</h1>
     <input type="text" id="taskInput" placeholder="Enter task">
     <button onclick="addTask()">Add Task</button>
-    <ul id="taskList"></ul>
+    <ul id="taskList">
+        <!-- they are mounted based on the data from the db -> <li></li><li></li>-->
+    </ul>
+    <p id="lambdaResponse"></p>
 
     <script>
+        let functionUrl = "https://ibqi472wjaavhtkgojene4fy7q0eofjv.lambda-url.us-east-1.on.aws/"
+
+        function addLambdaResponse(response) {
+            const lambdaResponse = document.querySelector('#lambdaResponse');
+            lambdaResponse.textContent = response;
+        }
+
+        async function handleCall(taskText) {
+            let randomId = Math.random().toString(36).substring(7);
+
+            const response = await fetch(functionUrl, {
+                method: "POST",
+                headers: {},
+                body: JSON.stringify({id: randomId, taskName: taskText})
+            });
+            const data = await response.json();
+            addLambdaResponse(data);
+            console.log(data);
+        }
         // Define a function to add a task
-        function addTask() {
+        async function addTask() {
+            // we should call the api endpoint and add this information to a database
             const taskInput = document.getElementById('taskInput');
-            const taskList = document.getElementById('taskList');
             const taskText = taskInput.value.trim();
+            const taskList = document.getElementById('taskList');
 
             if (taskText !== '') {
                 const listItem = document.createElement('li');
                 listItem.textContent = taskText;
                 taskList.appendChild(listItem);
                 taskInput.value = '';
+                await handleCall(taskText);
             }
         }
     </script>

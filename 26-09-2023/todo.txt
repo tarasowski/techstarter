@@ -1,0 +1,35 @@
+**Benutzerstory: To-Do-App**
+
+**Als** geschäftiger Berufstätiger
+
+**Möchte ich** eine To-Do-App verwenden können
+
+**So dass ich** meine Aufgaben effizient organisieren und verfolgen kann.
+
+**Akzeptanzkriterien:**
+
+1. **Anmelden und Benutzerverwaltung:**
+   - Der Benutzer kann sich mit einem Benutzernamen und einem Passwort anmelden.
+
+2. **To-Do-Erfassung:**
+   - Der Benutzer kann neue Aufgaben hinzufügen, indem er einen Titel und eine optionale Beschreibung eingibt.
+   - Der Benutzer kann Aufgaben als erledigt markieren und wieder als ausstehend markieren.
+
+3. **Aufgabenliste:**
+   - Nach der Anmeldung sieht der Benutzer eine Liste seiner Aufgaben, einschließlich Titel, Beschreibung, Fälligkeitsdatum und Status.
+   - Die Liste ist standardmäßig nach Fälligkeitsdatum sortiert, kann aber nach Bedarf nach anderen Kriterien sortiert werden.
+
+4. **Suchfunktion:**
+   - Der Benutzer kann nach Aufgaben basierend auf Titel, Beschreibung, Kategorie oder Fälligkeitsdatum suchen.
+   - Die Suchergebnisse werden in einer übersichtlichen Liste angezeigt.
+
+5. **Responsives Design:**
+   - Die Benutzeroberfläche der App passt sich verschiedenen Bildschirmgrößen an, um auf Mobilgeräten und Desktops gleichermaßen benutzerfreundlich zu sein.
+
+**Definition of Done:**
+- Die App wurde erfolgreich entwickelt und getestet.
+- Die Benutzeroberfläche ist ansprechend und benutzerfreundlich gestaltet.
+
+**Zusätzliche Hinweise:**
+- Die App sollte eine intuitive und einfache Benutzeroberfläche haben, um die Verwaltung von Aufgaben so effizient wie möglich zu gestalten.
+- Testen Sie die Anwendung gründlich, um sicherzustellen, dass sie zuverlässig und fehlerfrei funktioniert.

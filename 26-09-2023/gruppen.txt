@@ -1,0 +1,43 @@
+Teamleads sind mit ">" gekennzeichnet: als Team Lead ist man Teil des Lower Managements und dafür verantwortlich, eine Gruppe an Fachkräften zum Erfolg zu führen!
+
+Gruppe (Tukan:innen): 
+> Mathias
+Bartek
+Andreas
+Ingo
+Steven
+
+
+Gruppe (Füchse:innen):
+> Levent
+Evelyn
+Christoph Laube
+Jonathan
+
+
+Gruppe (Löwen:innen):
+> Dennis
+Sarah
+Stefan
+Severin
+
+
+Gruppe (Panda:innen)
+> Enrico
+Anna
+Christoph Raupach
+Marko
+
+
+Gruppe (Delfin:innen)
+> Timour
+Irena
+Dino
+Flamur
+
+
+Gruppe (Giraffe:innen)
+> Abi
+Dominik
+Muhammed
+Pablo

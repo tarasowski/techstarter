@@ -1,0 +1,37 @@
+**Benutzerstory: E-Mail-App mit Express.js und Vanilla JavaScript**
+
+**Als** regelmäßiger E-Mail-Nutzer
+
+**Möchte ich** eine einfache E-Mail-Anwendung erstellen können
+
+**So dass ich** meine E-Mails verwalten und lesen kann, ohne auf Drittanbieterdienste angewiesen zu sein.
+
+**Akzeptanzkriterien:**
+
+1. **Anmeldung und Benutzerverwaltung:**
+    - Der Benutzer kann sich mit seiner E-Mail-Adresse und einem Passwort anmelden.
+
+2. **E-Mail-Ansicht:**
+    - Nach der Anmeldung sieht der Benutzer eine Liste seiner E-Mails mit Absender, Betreff und Datum.
+    - Der Benutzer kann auf eine E-Mail klicken, um sie zu öffnen.
+    - E-Mails werden in einem klaren und benutzerfreundlichen Format angezeigt.
+
+3. **E-Mail-Komposition:**
+    - Der Benutzer kann neue E-Mails verfassen, indem er einen Empfänger, Betreff und den E-Mail-Text eingibt.
+
+4. **E-Mail-Versand und Empfang:**
+    - Gesendete E-Mails werden im "Gesendet"-Ordner des Benutzers gespeichert.
+    - Neue E-Mails werden automatisch abgerufen und im "Posteingang" angezeigt.
+
+5. **Responsives Design:**
+    - Die Benutzeroberfläche der App passt sich verschiedenen Bildschirmgrößen an, um auf Mobilgeräten und Desktops gleichermaßen benutzerfreundlich zu sein.
+
+**Definition of Done:**
+- Die App wurde erfolgreich entwickelt und getestet.
+- Die Benutzeroberfläche ist ansprechend und benutzerfreundlich gestaltet.
+- Die App erfüllt alle oben genannten Akzeptanzkriterien und ist frei von schwerwiegenden Fehlern und Sicherheitslücken.
+
+**Zusätzliche Hinweise:**
+- Bei der Frontend-Entwicklung verwenden Sie Vanilla JavaScript, um sicherzustellen, dass keine externen Frameworks benötigt werden.
+- Für die Backend-Entwicklung verwenden Sie Express.js
+- Testen Sie die Anwendung gründlich, um sicherzustellen, dass sie zuverlässig und fehlerfrei funktioniert.

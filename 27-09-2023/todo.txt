@@ -1,0 +1,51 @@
+**Benutzerstory:** JavaScript möchte ich eine Multiple-Choice-Quizspielanwendung erstellen, die es den Benutzern ermöglicht, Fragen zu beantworten und am Ende eine Punktzahl anzuzeigen.
+
+**Akzeptanzkriterien:**
+
+1. **Startseite:**
+   - Wenn ich die App öffne, möchte ich eine Begrüßungsnachricht oder den Titel des Quizspiels sehen.
+   - Es sollte eine Schaltfläche "Quiz starten" geben, die das Quiz startet, wenn ich darauf klicke.
+
+2. **Quizfragen:**
+   - Sobald das Quiz startet, möchte ich eine Reihe von Multiple-Choice-Fragen nacheinander sehen.
+   - Jede Frage sollte eine Aussage oder eine Aufforderung haben.
+   - Es sollte mindestens drei Antwortmöglichkeiten für jede Frage geben.
+   - Ich sollte in der Lage sein, für jede Frage eine Antwortmöglichkeit auszuwählen.
+
+3. **Rückmeldung zu den Antworten:**
+   - Nachdem ich eine Antwort ausgewählt habe, möchte ich sofortes Feedback erhalten, das anzeigt, ob meine Antwort richtig oder falsch war.
+   - Wenn meine Antwort falsch ist, sollte mir die richtige Antwort angezeigt werden.
+
+4. **Punkteverfolgung:**
+   - Während ich das Quiz durchlaufe, sollte meine aktuelle Punktzahl irgendwo auf dem Bildschirm angezeigt werden.
+   - Die Punktzahl sollte für jede richtige Antwort erhöht werden und für falsche Antworten unverändert bleiben.
+
+5. **Abschluss:**
+   - Nachdem ich alle Fragen beantwortet habe, möchte ich eine Zusammenfassung meiner Punktzahl und eine Nachricht (z. B. "Gut gemacht!" oder "Weiter üben!") erhalten.
+   - Es sollte eine Option geben, das Quiz neu zu starten oder zur Startseite zurückzukehren, um ein neues Quiz zu starten.
+
+6. **Barrierefreiheit und Benutzererfahrung:**
+   - Die App sollte eine saubere und benutzerfreundliche Benutzeroberfläche haben.
+   - Sie sollte responsiv sein und auf Desktop- und Mobilgeräten funktionieren.
+   - Alle Fragen und Antwortmöglichkeiten sollten leicht lesbar sein.
+
+
+**Definition of Done (DoD) für die Benutzerstory "Quizspiel-App"**
+
+1. **Funktionalität:**
+   - Alle in den Akzeptanzkriterien definierten Funktionen wurden implementiert und sind voll funktionsfähig.
+   - Der Benutzer kann das Quiz starten, Fragen beantworten und eine Punktzahl am Ende erhalten.
+
+2. **Rückmeldung zu den Antworten:**
+   - Nach Auswahl einer Antwort erfolgt sofortiges Feedback zur Richtigkeit der Antwort.
+   - Bei falschen Antworten wird die korrekte Antwort angezeigt.
+
+3. **Punkteverfolgung:**
+   - Die Punktzahl des Benutzers wird während des Quiz auf dem Bildschirm angezeigt.
+   - Die Punktzahl wird korrekt für richtige Antworten erhöht und für falsche Antworten unverändert gelassen.
+
+4. **Abschluss und Neustart:**
+   - Nach Abschluss des Quiz erhält der Benutzer eine Zusammenfassung seiner Punktzahl und eine abschließende Nachricht.
+   - Der Benutzer kann das Quiz neu starten oder zur Startseite zurückkehren, um ein neues Quiz zu beginnen.
+
+Much fun 🤙

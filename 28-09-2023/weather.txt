@@ -1,0 +1,35 @@
+**Title: Weather App**
+
+**User Story:**
+
+As a frequent traveler, I want to quickly check the current weather conditions for a specific location, so I can plan my activities accordingly.
+
+**Acceptance Criteria:**
+
+1. As a user, I should be able to enter the name of a city or provide a zip code in the search bar to get the current weather information.
+
+2. Upon entering a location and initiating the search, the application should fetch and display the current temperature, weather conditions (e.g., sunny, cloudy, rainy), and wind speed.
+
+3. If the entered location is not valid or does not exist, the application should provide a clear and user-friendly error message.
+
+4. The app should display the information in a visually appealing and easy-to-read format.
+
+5. Users should have the option to switch between temperature units (e.g., Celsius and Fahrenheit).
+
+6. The application should have a clean and intuitive user interface, making it easy to understand and use.
+
+7. The app should be responsive, ensuring a seamless experience on both desktop and mobile devices.
+
+8. Users should have the option to save favorite locations for quick access in future visits.
+
+**Definition of Done:**
+
+- The Weather App is functional and allows users to check the current weather for a specified location.
+- The app displays relevant weather information, including temperature, conditions, wind speed, humidity, and atmospheric pressure.
+- Users can easily switch between temperature units.
+- The app provides clear error messages when a location is not valid.
+- The user interface is intuitive, visually appealing, and responsive.
+- Users can save and manage favorite locations for quick access.
+- The application is free of major bugs and errors.
+- The code is well-documented and follows best practices.
+- The app has been tested on different devices and browsers to ensure cross-browser compatibility.

@@ -36,10 +36,3 @@ Stefan
 Dominik
 
 
-
-Gruppe JS Beginners:
-:: https://www.codecademy.com/learn/introduction-to-javascript
-> Sarah
-> Anna
-> Irena
-> Marko

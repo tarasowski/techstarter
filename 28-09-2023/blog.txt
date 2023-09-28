@@ -1,0 +1,36 @@
+**Title: Simple Blog**
+
+**User Story:**
+
+As a aspiring blogger, I want to share my thoughts and ideas through a simple blog platform.
+
+**Acceptance Criteria:**
+
+1. As a user, I should be able to create a new blog post by providing a title, content, and optional images.
+
+2. When creating a post, I want the ability to format text (bold, italic, lists) and include basic styling to enhance the presentation of my content.
+
+3. The blog should display a list of all published posts on the main page, showing the title, a brief preview, and the publication date.
+
+4. Each blog post should have a dedicated page with the full content and any associated images.
+
+5. Users should have the option to edit or delete their own posts.
+
+6. The blog platform should allow visitors to leave comments on individual blog posts.
+
+8. The blog should have a clean and visually appealing design, making it easy to navigate.
+
+9. Users should be able to access the blog from various devices, and the layout should be responsive.
+
+10. The application should have a simple authentication system, allowing only authorized users to create, edit, and delete posts.
+
+**Definition of Done:**
+
+- Users can create, edit, and delete blog posts.
+- The blog homepage displays a list of published posts with previews.
+- Each post has its dedicated page with the full content and comments section.
+- Users can format text and include basic styling in their blog posts.
+- Comments are moderated, and inappropriate comments can be deleted.
+- The blog has an intuitive and responsive design.
+- The application is secured with a basic authentication system.
+- The blog platform has been tested on different devices and browsers for cross-browser compatibility.

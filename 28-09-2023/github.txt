@@ -1,0 +1,32 @@
+**Title: GitHub User Search App**
+
+**User Story:**
+
+As a software developer, I want to find and explore the GitHub profiles of other users quickly. 
+
+**Acceptance Criteria:**
+
+1. As a user, I should be able to enter a GitHub username in a search bar.
+
+2. Upon entering a username and initiating the search, the application should fetch and display relevant information about the GitHub user, such as their profile picture, bio, location, and a link to their GitHub repositories.
+
+3. If the entered username is not valid or does not exist on GitHub, the application should provide a clear and user-friendly error message.
+
+4. The app should have a clean and intuitive user interface, making it easy to understand and use.
+
+5. Each displayed result should be clickable, leading to a detailed view of the selected GitHub user's profile and repositories.
+
+6. The application should be responsive, ensuring a seamless experience on both desktop and mobile devices.
+
+7. Users should have the option to explore multiple GitHub profiles in a single session without the need to reload the page.
+
+8. The app should handle potential errors gracefully, providing meaningful error messages in case of network issues or API failures.
+
+**Definition of Done:**
+
+- The GitHub User Search App is functional and allows users to search for GitHub profiles.
+- The app displays relevant information about the searched user.
+- The app provides clear error messages when necessary.
+- The user interface is intuitive and responsive.
+- The app is free of major bugs and errors.
+- The app has been tested on different devices and browsers to ensure cross-browser compatibility.

@@ -1,0 +1,44 @@
+Teamleads sind mit ">" gekennzeichnet: als Team Lead ist man Teil des Lower Managements und dafür verantwortlich, eine Gruppe an Fachkräften zum Erfolg zu führen!
+
+Gruppe:
+> Dino
+Evelyn
+Abi
+
+
+Gruppe:
+> Ingo
+Enrico
+Levent
+Steven
+
+
+Gruppe:
+> Andreas
+Flamur
+Bartek
+Timour
+Dominik
+
+
+Gruppe:
+> Jonathan
+Dennis
+Severin
+Pablo
+Christoph Raupach
+
+
+Gruppe:
+> Stefan
+Mathias
+Christoph Laube
+Muhammed
+
+
+Gruppe JS Beginners:
+:: https://www.codecademy.com/learn/introduction-to-javascript
+Sarah
+Anna
+Irena
+Marko

@@ -28,7 +28,7 @@ test('Get a post by ID', async () => {
 test('List all posts', async () => {
   const response = await makeRequest('/posts');
   expect(response.status).toBe(200);
-  expect(response.data.length).toBeGreaterThan(0);
+  expect(response.data.length).toBeGreaterThan(10);
 });
 
 // Add more tests for other API endpoints as needed

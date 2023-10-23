@@ -9,7 +9,7 @@ function areEqual(num1, num2) {
 
 //assert.strictEqual(areEqual(3, 3), true); // Dieser Test wird bestehen
 //assert.strictEqual(areEqual(2, 4), false); // Dieser Test wird bestehen
-assert.strictEqual(3, 2)
+assert.strictEqual(5, 2)
 
 /*
 

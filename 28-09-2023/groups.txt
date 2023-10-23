@@ -2,43 +2,43 @@ Teamleads sind mit ">" gekennzeichnet: als Team Lead ist man Teil des Lower Mana
 
 Gruppe:
 > Dino
-Evelyn
-Abi
+Evelyn x
+Abi x
 
 
 Gruppe:
-> Ingo
-Enrico
-Levent
-Steven
+> Ingo x
+Enrico x
+Levent x
+Steven x
 
 
 Gruppe:
-> Andreas
-Flamur
+> Andreas x
+Flamur x
 Bartek
-Timour
-Dominik
+Timour x
+Dominik -> Opa
 
 
 Gruppe:
-> Jonathan
-Dennis
-Severin
-Pablo
-Christoph Raupach
+> Jonathan -
+Dennis x
+Severin -
+Pablo x
+Christoph Raupach -
 
 
 Gruppe:
-> Stefan
-Mathias
-Christoph Laube
-Muhammed
+> Stefan x
+Mathias x
+Christoph Laube -
 
 
 Gruppe JS Beginners:
 :: https://www.codecademy.com/learn/introduction-to-javascript
-Sarah
-Anna
-Irena
-Marko
+Sarah -
+Muhammed +
+Anna +
+Irena -
+Marko -

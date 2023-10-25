@@ -1,0 +1,19 @@
+Part 1: Prepare for deployment
+
+Install Fabric on your local development environment using pip install fabric.
+
+Create a simple web application (e.g., a Flask or Django app) or use an existing one.
+
+Set up a remote server where you can deploy the web application. Ensure that you can SSH into the server without a password (use SSH keys).
+
+Create a Fabric script to automate the deployment process.
+
+Part 2: Deploy the Application
+
+Run your Fabric deployment script by executing fab deploy in your terminal.
+
+The script will connect to the remote server, transfer your application code, install dependencies, and start the web application server.
+
+Access the web application by using your remote server's IP or domain.
+
+Document the deployment process, including any additional configuration or adjustments you made for your specific application.

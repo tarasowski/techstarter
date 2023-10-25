@@ -1,0 +1,7 @@
+1. Conditional statements
+2. Loops
+3. Data structures
+4. Functions
+5. Modules + Libraries
+6. Error handling
+7. File handling

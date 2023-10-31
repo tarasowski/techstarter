@@ -1,133 +1,106 @@
-tuple1 = (1, 2)
-first, second  = tuple1
+color = "blue"
 
-# const [first, second] = [1, 2]
+# switch 
+if color == "red":
+    print("it is true")
+    pass
+elif color == "green":
+    print("my color is green")
+    pass
+elif color == "blue":
+    print("from my blue")
+    pass
+elif color == "orange":
+    print("from my blue")
+    pass
+elif color == "yellow":
+    print("from my blue")
+    pass
+elif color == "gray":
+    print("from my blue")
+    pass
+else:
+    print("coming from else")
+    pass
 
-print(first, second)
+# turnary operator
+#true ? "is true" : "is false"
 
-def main(data):
-    first, second = data
-    return (10, second + 10)
+a = "5"
 
-first_from_fn, second_from_fn = main(tuple1)
-print(first_from_fn, second_from_fn)
+"Ja, 5" if a == 5 else "Nein, keine 5"
 
-# list is a mutable data structure
-xs = [1,2,3,4]
-xs[1] = 100
+if (a == 5):
+    print("Ja, 5")
+else:
+    print("Nein, keine 5")
 
-#txs = (1, 2, 3, 4)
-#txs[1] = 100
-#print(xs)
+# try {} catch(e) {}
+# try: except:
 
-first_value = (1) # -> integer
-first_value_tuple = (1,) #-> tuple
+def read_data():
+    try:
+        file = open("test.txt", mode= "r")
+        return file.read()
+        #("print try block")
+        #print(file.read())
+    except Exception as e: 
+        #print("except block")
+        #print("comes form exception", e)
+        # mode="a" is append
+        f = open("test.txt", mode= "w")
+        f.write("Now the file has more content!")
+        f.close()
+        # this runs always 👇
 
-print(type(first_value))
-print(type(first_value_tuple))
+#content = read_data()
 
-print( 
-    (1, 2, 3) + (4, 5, 6)
-)
+#print("content", content)
+#print("das Programm läuft weiter !!!")
 
-dct = {"key": "value"}
-st = {"value", "value2"}
-primes = {2, 3, 5, 7, 11, 13, 17, 19}
+# `${varName} here is my message`
 
-set1 = {} # -> dict
-set1 = set() # -> set
-#empty_tuple = ()
-empty_tuple = tuple()
-
-print(
-    11 in primes,
-    15 in primes,
-    9 not in primes,
-    7 not in primes,
-    {1, 1, 2, 2, 3, 3},
-    (1, 2) == (2, 1), # -> False
-    [1, 2] == [2, 1], # -> False
-    set([1, 2, 2, 2, 1, 1]) == set([2, 1]), # -> True
-    sorted([1, 2]) == sorted([2, 1]), # -> True
-    type(())
-)
-
-# dict
-user = {
-    "age": 39,
-    "name": "John",
-}
-
-# bracket notation in JS and dot notation in JS both workd
-print(
-    #user["ageX"], # -> bracket notation
-    user.get("ageX", 0)
-)
-
-# check if user is over 18
-
-if user.get("agex", 0) > 18:
-    print("User is over 18")
-else: 
-    print("User is under 18")
-
-# there should not be more than a single if statemetn
-# clean code ☝️
-
-def check_if_john(user):
-    if user["name"] == "John":
-        print("John you hit the jackpot")
-        return True
-    else: 
-        return False
-
-def check_age(user):
-    if ("age" in user):
-        if user["age"] > 18:
-            print("User is over 18")
-            check_if_john(user)
-        else:
-            print("User is under 18")
-    else:
-        print("User is under 18")
-
-
-#check_age(user)
-
-weekdays = {"Mo": "Monday", "Tu": "Tuesday", "We": "Wednesday", "Th": "Thursday", "Fr": "Friday", "Sa": "Saturday", "Su": "Sunday"} 
-
-user["address"] = "123 Main St"
-#user.address = "123 Main St"
+var_1 = "hello"
+var_2 = "world"
 
 print(
-    #weekdays["Mo"],
-    weekdays.get("Mo"),
-    [day for day in weekdays.values()],
-    [day + "!" for day in weekdays.keys()],
-    user.get("age") is None, # None is similar to undefined
-    user
+    #"{}, {}!".format(var_1, var_2),
+    #"{0}, {0}!".format(var_1, var_2), # wir arbeiten hier mit indx
+    f"{var_1} hier ist my var_1, {var_2} hier is my var2"
+    f"{var_2} hier ist was ich sagen" # syntatic sugar
 )
 
-text = "Dies ist ein Test-String"
-# shift + =
-print(
-    text[5]
-)
+name = "Bartek"
 
-# str = string
-# x = unbekannte Zahl
-# xs = liste
-# obj = object
-# range(start, end - 1)
-# range(m, n-1)
-                #m, n-1
-print(list(range(1, 5)))
+def change_val():
+    return "Pablo" 
 
-print(list(range(0, 101)))
-print(list(range(10))) # we remove the start value of zero, pythonic way
+name = change_val()
 
-test = [entry for entry in list(range(0, 101))]
+print(f"Hallo {name}!")
+
+# Encapsulation -> Class (attribute) + methoden
+
+class Car():
+    def __init__(self, color):
+        self.color = color
+    def change_color(new_color):
+        Car.color = new_color
+
+class Greeting():
+    def __init__(self, name):
+        self.name = name
+    def change_name(new_name):
+        Greeting.name = new_name
+        return f"Hallo {Greeting.name}"
+
+def change_name(new_name):
+    return f"Hallo {new_name}"
+
+# var -> kann immer überschrieben werden
+# const -> kann nicht überschrieben werden
 
 
 
-
+ 
+    

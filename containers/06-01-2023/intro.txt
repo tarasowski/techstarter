@@ -1,0 +1,75 @@
+Docker is a platform for developing, shipping, and running applications inside containers. 
+
+Containers are lightweight, portable, and self-sufficient units that encapsulate an application and its dependencies. 
+
+Main components of Docker:
+
+1. Docker Image (like a class in python/js):
+   	- A Docker image is a template or blueprint for creating containers. 
+	- It's a snapshot of a file system with the application code, libraries, and dependencies required to run an application.
+   	- Images are read-only and can be shared and reused. 
+	- They are typically stored in a Docker registry, such as Docker Hub AWS ECS, where you can download them.
+
+2. Docker Container (like an instance of a calss in python/js):
+   	- A Docker container is an instance of a Docker image. 
+	- It's a runnable environment that includes the application and its dependencies, isolated from the host system.
+   	- Containers are lightweight, portable, and can be easily moved between different environments without compatibility issues.
+
+Steps in using Docker:
+
+1. Pulling Docker Image:
+   	- You start by pulling a Docker image from a registry using the `docker pull` command. 
+	- This fetches the image to your local system, making it available for creating containers.
+
+2. Creating a Docker Container:
+   	- To create a container, you use the `docker run` command and specify the image to base the container on.
+   	- Docker creates a new, isolated environment using the image's file system and starts the application within the container.
+	** This environment is isolated from your host operating system, meaning it has its own file system, libraries, and settings.
+	** It's like a separate room where your application can run independently of your computer's setup. 
+	** So, when Docker creates an "isolated environment," it's setting up a little, self-contained world where your application can run without causing trouble for your system
+	!!! `docker run` is used to both create and start a new container
+
+3. Running the Container:
+   	- Once the container is created, you can start it using the `docker start` command (if it's not already running).
+   	- The application inside the container runs independently of the host system and other containers.
+	!!! `docker start` is used to restart an existing stopped container.
+
+4. Interacting with the Container:
+   	- You can interact with the running container by executing commands or attaching to its terminal. 
+	- Use `docker exec` to run commands within the container, or use `docker attach` to access its terminal.
+	** `docker exec` allows you to run a specific command inside a running container. It doesn't attach you to the container's terminal interactively but rather runs a command and returns the output, run `docker exec my_container_id ls /var/www`.
+	** `docker attach` is used to attach your terminal to a running container's terminal interactively. It allows you to interact with the container's shell as if you were working on it directly, run `docker attach my_container_id 
+
+5. Stopping the Container:
+   	- You can stop a running container using the `docker stop container_id` command. This gracefully shuts down the application and the container.
+	** When an action is performed gracefully, it typically implies that it is done smoothly, without abruptness or disruption
+
+6. Cleaning Up:
+   	- Containers are meant to be disposable. 
+	- You can remove a stopped container using the `docker rm container_id` command, which deletes the container BUT NOT the underlying image.
+
+7. Managing Images:
+   	- Docker images can be managed using commands like `docker pull` to update or fetch new images, 
+	- `docker build` to create custom images, 
+	- and `docker rmi` to remove images.
+
+8. Docker Compose (Optional):
+   	- For complex applications with multiple containers, you can use Docker Compose, a tool for defining and running multi-container applications using a YAML file.
+
+9. Docker Registry:
+   	- Docker images are often stored in Docker registries, like Docker Hub or AWS ECS, which serve as repositories for sharing and distributing images.
+
+Docker Commands:
+	- `docker ps` -> list containers
+	- `docker ps -a` -> list stopped containers
+	- `docker images` -> list images
+	- `docker rm container_id` -> remove containers
+	- `docker rmi my_image` -> remove all images with a specific name
+	- `docker rmi my_image:tag` -> remove images with a specific tag
+	- `docker exec container_id [command]` -> run a specfic command inside the container
+	- `docker attach container_id` -> attach your terminal to a running container
+	- `docker start container_id` -> start container
+	- `docker stop container_id` -> stop container
+	- `docker run image_name[:tag]` -> create a container from an image
+	- `docker pull image_name` -> download the image to localhost
+	- `docker build -t image_name[:tag]` -> creates a docker image

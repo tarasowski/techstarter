@@ -70,8 +70,9 @@ Docker Commands:
 	- `docker attach container_id` -> attach your terminal to a running container
 	- `docker start container_id` -> start container
 	- `docker stop container_id` -> stop container
-	- `docker run image_name[:tag]` -> create a container from an image
+	- `docker run image_name[:tag]` -> creates and starts a container from an image (combines both docker create + docker start)
 	- `docker pull image_name` -> download the image to localhost
 	- `docker build -t image_name[:tag]` -> creates a docker image
 	- `docker commit container_id new_image_name[:tag]` -> creates a new image from existing container
 	- `docker logs container_id` -> get the logs of the container
+	- `docker create image` -> creates a container that can be started later

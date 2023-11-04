@@ -14,3 +14,7 @@
 6. View **running** containers, run: docker ps
 
 7. Start and stop containers, run: docker start container_id or docker stock container_id
+
+8. Bonus: Create a new image out of the modified container use ubuntu-new:v1 as the new image name
+
+9. Bonus: Start a new container from the newly created image

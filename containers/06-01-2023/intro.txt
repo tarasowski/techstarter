@@ -61,7 +61,7 @@ Steps in using Docker:
 
 Docker Commands:
 	- `docker ps` -> list containers
-	- `docker ps -a` -> list stopped containers
+	- `docker ps -a` -> list all incl. stopped containers
 	- `docker images` -> list images
 	- `docker rm container_id` -> remove containers
 	- `docker rmi my_image` -> remove all images with a specific name
@@ -73,3 +73,5 @@ Docker Commands:
 	- `docker run image_name[:tag]` -> create a container from an image
 	- `docker pull image_name` -> download the image to localhost
 	- `docker build -t image_name[:tag]` -> creates a docker image
+	- `docker commit container_id new_image_name[:tag]` -> creates a new image from existing container
+	- `docker logs container_id` -> get the logs of the container

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Task 1: Run a Docker Container
+echo "Task 1: Run a Docker Container"
+docker run -d -p 8080:80 --name my-web-container nginx
+echo "Web server container is running. Visit http://localhost:8080 to verify."
+
+# Task 2: Rename a Running Container
+echo "Task 2: Rename a Running Container"
+docker ps
+docker rename my-web-container my-renamed-container
+docker ps
+
+# Task 3: List Containers
+echo "Task 3: List Containers"
+docker ps -a
+
+# Clean Up
+echo "Cleaning up..."
+docker stop my-renamed-container
+docker rm my-renamed-container
+docker rmi nginx
+
+echo "Exercise complete."
+

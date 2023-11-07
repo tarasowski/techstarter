@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Task 1: Create Content Inside a Container
+echo "Task 1: Create Content Inside a Container"
+docker run -it --name my-work-container ubuntu:latest
+echo "Hello, Docker!" > my_file.txt
+echo "Content created inside the container. Exiting..."
+docker stop my-work-container
+
+# Task 2: Show Containers and Showcase Your Work
+echo "Task 2: Show Containers and Showcase Your Work"
+docker ps -a
+docker cp my-work-container:/my_file.txt ./my_file.txt
+echo "Content showcased from the container."
+
+# Task 3: Cleanup
+echo "Task 3: Cleanup"
+docker rm my-work-container
+
+echo "Exercise complete."

@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# Task 1: Prepare an EC2 Instance
+echo "Task 1: Prepare an EC2 Instance"
+# Launch an EC2 instance on AWS and make sure you have SSH access to it.
+
+# Task 2: Connect to the EC2 Instance
+echo "Task 2: Connect to the EC2 Instance"
+# Connect to your EC2 instance using SSH.
+
+# Task 3: Create a Directory for Docker Configuration
+echo "Task 3: Create a Directory for Docker Configuration"
+mkdir nginx-docker
+cd nginx-docker
+
+# Task 4: Create an HTML File
+echo "Task 4: Create an HTML File"
+echo "<html><body><h1>Hello, Docker Nginx on EC2!</h1></body></html>" > index.html
+
+# Task 5: Create a Dockerfile
+echo "Task 5: Create a Dockerfile"
+cat > Dockerfile <<EOF
+# Use an official Nginx runtime as the base image
+FROM nginx:latest
+
+# Copy your HTML file into the container's web root directory
+COPY index.html /usr/share/nginx/html/
+
+# Expose port 80 to allow external access
+EXPOSE 80
+EOF
+
+# Task 6: Build the Docker Image
+echo "Task 6: Build the Docker Image"
+docker build -t my-nginx-image .
+
+# Task 7: Run the Docker Container
+echo "Task 7: Run the Docker Container"
+docker run -d -p 80:80 --name my-nginx-container my-nginx-image
+
+# Task 8: Access the Web Page
+echo "Task 8: Access the Web Page"
+echo "In a web browser, enter your EC2 instance's public IP address or public DNS. You should see your 'Hello, Docker Nginx on EC2!' message."
+
+# Task 9: Cleanup (Optional)
+echo "Task 9: Cleanup (Optional)"
+echo "If you're done with the exercise, you can stop and remove the Docker container:"
+echo "docker stop my-nginx-container"
+echo "docker rm my-nginx-container"
+
+echo "Exercise complete."

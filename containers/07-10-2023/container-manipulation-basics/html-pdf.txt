@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Task: Create an HTML file
+echo "Task: Create an HTML file"
+echo "<html><body><h1>Hello, Docker!</h1></body></html>" > sample.html
+
+# Task: Convert HTML to PDF Inside a Docker Container
+echo "Task: Convert HTML to PDF Inside a Docker Container"
+docker run --rm --name html-to-pdf-container -v "$(pwd)":/mnt ubuntu:latest sh -c 'apt update && apt install -y wkhtmltopdf && wkhtmltopdf /mnt/sample.html /mnt/sample.pdf'
+
+# Show the PDF
+echo "PDF file created. Showing the content:"
+cat sample.pdf
+
+# Cleanup
+echo "Cleanup"
+docker container rm html-to-pdf-container
+rm sample.html sample.pdf
+
+echo "Exercise complete."

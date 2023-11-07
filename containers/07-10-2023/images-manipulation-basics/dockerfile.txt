@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Task 1: Prepare a Directory Structure
+echo "Task 1: Prepare a Directory Structure"
+mkdir nginx-docker-exercise
+cd nginx-docker-exercise
+
+# Task 2: Create a Dockerfile
+echo "Task 2: Create a Dockerfile"
+cat > Dockerfile <<EOF
+# Use an official Nginx runtime as the base image
+FROM nginx:latest
+
+# Copy a custom HTML file into the container's web root directory
+COPY index.html /usr/share/nginx/html/
+
+# Expose port 80 to allow external access
+EXPOSE 80
+EOF
+
+# Task 3: Create an HTML File
+echo "Task 3: Create an HTML File"
+echo "<html><body><h1>Hello, Docker Nginx!</h1></body></html>" > index.html
+
+# Task 4: Build the Docker Image
+echo "Task 4: Build the Docker Image"
+docker build -t my-nginx-image .
+
+# Task 5: Run the Docker Container
+echo "Task 5: Run the Docker Container"
+docker run -d -p 8080:80 --name my-nginx-container my-nginx-image
+
+# Task 6: Access the Web Page
+echo "Task 6: Access the Web Page"
+echo "Open a web browser and enter the following URL:"
+echo "http://localhost:8080"
+echo "You should see your 'Hello, Docker Nginx!' message."
+
+# Task 7: Cleanup (Optional)
+echo "Task 7: Cleanup (Optional)"
+echo "If you're done with the exercise, you can stop and remove the Docker container:"
+echo "docker stop my-nginx-container"
+echo "docker rm my-nginx-container"
+
+echo "Exercise complete."

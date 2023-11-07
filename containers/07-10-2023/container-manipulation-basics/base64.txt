@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Task: Run a Docker Container and Perform Base64 Encoding
+echo "Task: Run a Docker Container and Perform Base64 Encoding"
+docker run --name my-encoding-container ubuntu:latest sh -c 'echo -n "Hello, Docker!" | base64'
+
+# Cleanup
+echo "Cleanup"
+docker rm my-encoding-container
+
+echo "Exercise complete."
+

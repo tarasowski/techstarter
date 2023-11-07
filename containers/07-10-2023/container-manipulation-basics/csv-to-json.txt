@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Task: Create a CSV file
+echo "Task: Create a CSV file"
+echo "Name,Age,City" > data.csv
+echo "John,30,New York" >> data.csv
+echo "Alice,25,Los Angeles" >> data.csv
+echo "Bob,35,San Francisco" >> data.csv
+
+# Task: Convert CSV to JSON Inside a Docker Container
+echo "Task: Convert CSV to JSON Inside a Docker Container"
+docker run --rm --name csv-to-json-container -v "$(pwd)":/mnt ubuntu:latest sh -c 'apt update && apt install -y python3 python3-pip && pip install csvkit && csvjson /mnt/data.csv > /mnt/data.json'
+
+# Show the JSON
+echo "JSON file created. Showing the content:"
+cat data.json
+
+# Cleanup
+echo "Cleanup"
+docker container rm csv-to-json-container
+rm data.csv data.json
+
+echo "Exercise complete."
+

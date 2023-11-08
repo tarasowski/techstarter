@@ -1,0 +1,8 @@
+1. Create a simple react app
+2. Containerize your react app
+3. Share it online
+4. Run a container on EC2
+	* first install docker
+	* then launch docker daemon
+	* if docker launched then run a container
+5. Make EC2 accessible from the web

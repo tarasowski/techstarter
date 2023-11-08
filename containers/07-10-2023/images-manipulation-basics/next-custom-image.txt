@@ -1,4 +1,4 @@
-1. Create a simple react app
+1. Create a simple next app
 2. Containerize your react app
 3. Share it online
 4. Run a container on EC2

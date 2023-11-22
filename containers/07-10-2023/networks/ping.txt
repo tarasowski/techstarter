@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Step 1: Create a User-Defined Bridge Network
+docker network create my_network
+
+# Step 2: Run Container 1 on the Custom Network
+docker run -d --name container1 --network=my_network alpine:latest sleep 1000
+
+# Step 3: Run Container 2 on the Same Custom Network
+docker run -d --name container2 --network=my_network alpine:latest sleep 1000
+
+# Step 4: Inspect the Network
+docker network inspect my_network
+
+# Step 5: Communicate Between Containers (Example: Pinging container2 from container1)
+docker exec -it container1 sh -c "ping container2"
+
+# Clean up: Optionally remove containers and the network after the example
+#docker stop container1 container2
+#docker rm container1 container2
+#docker network rm my_network

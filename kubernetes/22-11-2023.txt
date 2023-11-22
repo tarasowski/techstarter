@@ -1,0 +1,10 @@
+1. Dockerize basic Nextjs app (docker compose)
+2. Push to Github
+3. Upload to Beanstalk
+4. Connect Code Pipeline to Github 
+5. On Github push update the current version on Beanstalk
+
+Or
+
+Kubernatize the following application: https://github.com/docker/awesome-compose/tree/master/nginx-nodejs-redis
+

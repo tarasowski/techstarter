@@ -1,5 +1,6 @@
 1. Create a simple next app
 2. Containerize your react app
+	* npm run dev (no need to have a production build)
 3. Share it online
 4. Run a container on EC2
 	* first install docker

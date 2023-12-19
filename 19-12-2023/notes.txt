@@ -1,0 +1,15 @@
+- Centralized logging on AWS Whitepaper
+- Explain how Cloudwatch insights work
+- Show the query language with examples: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html 
+- Install Cloudwatch agent on EC2: https://www.checkmateq.com/blog/cloudwatch-agent 
+- Stress test ec2 instance cpu: https://gregsnotes.medium.com/how-to-quickly-stress-test-cpu-on-amazon-linux-7fc49c473334
+- Analyze the custom metrics from our ec2 in Cloudwatch
+- Install grafana on ec2: https://medium.com/all-things-devops/how-to-install-grafana-on-aws-ec2-cefc01d5ff08
+- Connect Cloudwatch as datasource and read grafana logs: sudo tail /var/log/grafana/grafana.log
+- Display custom metrics in grafana from Cloudwatch: https://repost.aws/questions/QUDEH5CY-lTR-McXlbp84ZDw/cloudwatch-custom-metric-not-showing-in-aws-grafana
+- Import dashboards in grafana
+- Create a lambda dashboard in grafana
+- Create an ec2 dashboard in grafana
+- Contest: Dashboard Design Derby: Beauty in Data
+- Install nginx docker app on ec2, and sync the logs to cloudwatch
+

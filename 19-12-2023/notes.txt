@@ -12,4 +12,7 @@
 - Create an ec2 dashboard in grafana
 - Contest: Dashboard Design Derby: Beauty in Data
 - Install nginx docker app on ec2, and sync the logs to cloudwatch
+- Export grafana dashboard and import on a newly created ec2 machine
+- Example with influxdb as datasource covid data: https://github.com/viktorsapozhok/docker-postgres-influxdb-grafana
+- Influxdb tutorial: https://www.influxdata.com/blog/grafana-dashboard-tutorial/
 
